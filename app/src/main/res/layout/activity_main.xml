@@ -14,30 +14,36 @@
         android:padding="16dp"
         android:textAllCaps="true"/>
 
-    <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:text="+"
-        android:layout_margin="16dp"
-        android:onClick="addButton"/>
-
-
-    <TextView
-        android:id="@+id/textNumber"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:text="0"
-        android:padding="16dp"
-        android:textColor="@android:color/black"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:text="-"
-        android:layout_margin="16dp"
-        android:id="@+id/subtracButton"
-        />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:layout_margin="16dp"
+            android:onClick="addButton"/>
+
+        <TextView
+            android:id="@+id/textNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="0"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            android:layout_margin="16dp"
+            android:id="@+id/subtracButton"
+            android:onClick="decrementButton" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
