@@ -7,6 +7,36 @@
     android:orientation="vertical"
     tools:context="com.dafinoer.javadroid.MainActivity">
 
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input name"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Topping"
+        android:padding="16dp"/>
+
+    <CheckBox
+        android:id="@+id/ice_cone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ice Cone"
+        android:layout_margin="16dp"
+        />
+    <CheckBox
+        android:id="@+id/white_creamer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White Creamer"
+        android:layout_margin="16dp"
+        />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,11 +78,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="Order Summary"
         android:padding="16dp" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/order_summary_tex_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$0"
